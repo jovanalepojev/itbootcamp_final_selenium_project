@@ -1,3 +1,4 @@
+import helper.Helper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -7,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import pages.*;
 
+import java.io.IOException;
 import java.time.Duration;
 
 public abstract class BaseTest {
@@ -45,8 +47,9 @@ public abstract class BaseTest {
     }
 
     @AfterClass
-    public void afterClass() throws InterruptedException {
+    public void afterClass() throws InterruptedException, IOException {
 
+        new Helper().takeScreenshot(driver,  "relativePath");
         Thread.sleep(2000);
         driver.quit();
     }
