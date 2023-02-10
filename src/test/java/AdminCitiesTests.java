@@ -33,9 +33,6 @@ public class AdminCitiesTests extends BaseTest {
     public void checksInputTypesForCreateEditNewCity() throws InterruptedException {
 //        navPage.getLogInButton().click();
 
-//        loginPage.getEmailField().sendKeys("admin@admin.com");
-//        loginPage.getPasswordField().sendKeys("12345");
-//        loginPage.getLogInButton().click();
         navPage.getAdminButton().click();
         navPage.getCitiesLink().click();
         Thread.sleep(2000);
@@ -50,10 +47,6 @@ public class AdminCitiesTests extends BaseTest {
     public void createNewCity() throws InterruptedException {
 //       Credentials: City:Lepojev Jovana's city
 
-//        navPage.getLogInButton().click();
-//        loginPage.getEmailField().sendKeys("admin@admin.com");
-//        loginPage.getPasswordField().sendKeys("12345");
-//        loginPage.getLogInButton().click();
         navPage.getAdminButton().click();
         navPage.getCitiesLink().click();
         citiesPage.getNewItemButton().click();
@@ -71,10 +64,6 @@ public class AdminCitiesTests extends BaseTest {
 //       Credentials: old city name: Lepojev Jovana's city
 //                    new city name: Lepojev's city
 
-//        navPage.getLogInButton().click();
-//        loginPage.getEmailField().sendKeys("admin@admin.com");
-//        loginPage.getPasswordField().sendKeys("12345");
-//        loginPage.getLogInButton().click();
         navPage.getAdminButton().click();
         navPage.getCitiesLink().click();
         citiesPage.getSearchInput().sendKeys("Lepojev Jovana's city");
@@ -95,10 +84,6 @@ public class AdminCitiesTests extends BaseTest {
     public void searchCity() throws InterruptedException {
 //       Credentials: city name: Lepojev's city
 
-//        navPage.getLogInButton().click();
-//        loginPage.getEmailField().sendKeys("admin@admin.com");
-//        loginPage.getPasswordField().sendKeys("12345");
-//        loginPage.getLogInButton().click();
         navPage.getAdminButton().click();
         navPage.getCitiesLink().click();
         citiesPage.getSearchInput().sendKeys("Lepojev's city");
@@ -113,10 +98,6 @@ public class AdminCitiesTests extends BaseTest {
     public void deleteCity() throws InterruptedException {
 //       Credentials: city name: Lepojev's city
 
-        navPage.getLogInButton().click();
-        loginPage.getEmailField().sendKeys("admin@admin.com");
-        loginPage.getPasswordField().sendKeys("12345");
-        loginPage.getLogInButton().click();
         navPage.getAdminButton().click();
         navPage.getCitiesLink().click();
         citiesPage.getSearchInput().sendKeys("Lepojev's city");
